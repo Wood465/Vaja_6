@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Festival Okusov - Kontakt</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Festival Okusov</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Preklopi navigacijo">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Domov</a></li>
+          <li class="nav-item"><a class="nav-link" href="o-festivalu.html">O festivalu</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <section class="row g-4">
+      <div class="col-lg-6">
+        <h1 class="mb-3">Rezerviraj mizo</h1>
+        <form id="reservationForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Ime in priimek</label>
+            <input type="text" class="form-control" id="fullName" required />
+            <div class="invalid-feedback">Vnesite ime in priimek.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+            <div class="invalid-feedback">Vnesite veljaven email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="people" class="form-label">Število oseb</label>
+            <select id="people" class="form-select" required>
+              <option value="">Izberite...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+            </select>
+            <div class="invalid-feedback">Izberite število oseb.</div>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Datum</label>
+            <input type="date" class="form-control" id="date" required />
+            <div class="invalid-feedback">Izberite datum.</div>
+          </div>
+          <div class="mb-3">
+            <label for="time" class="form-label">Ura</label>
+            <input type="time" class="form-control" id="time" required />
+            <div class="invalid-feedback">Izberite uro.</div>
+          </div>
+          <button type="submit" class="btn btn-warning">Pošlji</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-3">Kontakt & lokacija</h2>
+        <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Trg mladosti 3, 3320 Velenje</p>
+        <p class="mb-1"><i class="bi bi-telephone me-2"></i>01 234 56 78</p>
+        <p class="mb-3"><i class="bi bi-envelope me-2"></i>info@festival-okusov.si</p>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://maps.google.com/maps?q=Trg%20mladosti%203%2C%20Velenje&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Zemljevid"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center text-md-start">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div>Copyright © 2026 Festival Okusov</div>
+        <div class="mt-3 mt-md-0">
+          <a class="text-light fs-4 me-3" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a class="text-light fs-4 me-3" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a class="text-light fs-4" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
